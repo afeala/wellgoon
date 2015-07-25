@@ -10,5 +10,5 @@ import com.wellgoon.bean.User;
  * 创 建 于：2015/7/23
  */
 public interface UserDao {
-    public void save(User user);
+    public void add(User user);
 }

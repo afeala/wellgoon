@@ -24,6 +24,10 @@ public class UserAction extends ActionSupport {
     @Resource
     private UserService userService;
 
+    public void add(){
+        userService.add(user);
+    }
+
     public User getUser() {
         return user;
     }

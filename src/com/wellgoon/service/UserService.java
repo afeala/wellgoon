@@ -14,5 +14,5 @@ public interface UserService {
      * 用户业务逻辑管理
      * @param user
      */
-    public void save(User user);
+    public void add(User user);
 }

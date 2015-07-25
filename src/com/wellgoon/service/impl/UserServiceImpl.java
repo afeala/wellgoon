@@ -26,8 +26,8 @@ public class UserServiceImpl implements UserService {
      * @param user
      */
     @Override
-    public void save(User user) {
-        userDao.save(user);
+    public void add(User user) {
+        userDao.add(user);
     }
 
     public UserDao getUserDao() {
