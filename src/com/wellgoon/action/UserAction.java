@@ -1,5 +1,7 @@
 package com.wellgoon.action;
 
+import com.opensymphony.xwork2.ActionSupport;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -10,8 +12,6 @@ import java.awt.event.ActionEvent;
  * 创 建 人：Rocky
  * 创 建 于：2015/7/23
  */
-public class UserAction extends AbstractAction {
-    @Override
-    public void actionPerformed(ActionEvent e) {
-    }
+public class UserAction extends ActionSupport {
+
 }

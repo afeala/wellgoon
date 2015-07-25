@@ -9,6 +9,6 @@
             <generator class="uuid" />
         </id>
         <property name="username" type ="string" length="50"/>
-        <property name="password" length="32"/>
+        <property name="password" length="36"/>
     </class>
 </hibernate-mapping>
