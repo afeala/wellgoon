@@ -21,4 +21,6 @@
         <constant name="struts.objectFactory" value="spring" />
         <!-- 国际化资源文件名称 -->
         <constant name="struts.custom.i18n.resources" value="globalMessages"/>
+
+        <include file="struct_web.xml" />
 </struts>
