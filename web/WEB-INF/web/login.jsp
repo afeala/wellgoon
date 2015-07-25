@@ -7,7 +7,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Wellcome to We'll go on</title>
+    <title>Login</title>
 </head>
 <body>
 

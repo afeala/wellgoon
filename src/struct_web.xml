@@ -7,5 +7,27 @@
 <struts>
         <package name="web" extends="struts-default" namespace="/web">
 
+                <interceptors>
+                        <interceptor name="permission" class="permissionInterceptor"/>
+                        <interceptor-stack name="permissionStack">
+                                <interceptor-ref name="defaultStack" />
+                                <interceptor-ref name="permission" />
+                        </interceptor-stack>
+                </interceptors>
+
+                <global-results>
+                        <result name="index" type="redirectAction" >
+                                <param name="namespace">/web</param>
+                                <param name="actionName">index_index</param>
+                        </result>
+                        <result name="login" type="redirectAction">
+                                <param name="namespace">/web</param>
+                                <param name="actionName">index_login</param>
+                        </result>
+                </global-results>
+
+                <action name="*_*" class="{1}ActionWeb" method="{2}">
+                        <result name="success">/WEB-INF/home/{1}/{2}.jsp</result>
+                </action>
         </package>
 </struts>
