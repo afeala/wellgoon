@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="wellgoon">
+    <output-path>C:/Program Files/Apache Software Foundation/Tomcat 7.0/webapps/wellgoon</output-path>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/META-INF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="dir-copy" path="$PROJECT_DIR$/web/WEB-INF/classes" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="wellgoon/web/Web" />
+    </root>
+  </artifact>
+</component>
