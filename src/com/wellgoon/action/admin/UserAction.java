@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.util.List;
 
 /**
  * 项目名称：studyssh
@@ -20,12 +21,22 @@ import java.awt.event.ActionEvent;
 @Controller("userActionAdmin")
 @Scope("prototype")
 public class UserAction extends ActionSupport {
-    private User user;
+    User user;
+    List<User> userList;
     @Resource
     private UserService userService;
 
-    public void add(){
-        userService.add(user);
+    public String index(){
+        userList = userService.getAll();
+        return SUCCESS;
+    }
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
     }
 
     public User getUser() {

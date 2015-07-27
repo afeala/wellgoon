@@ -1,5 +1,6 @@
 package com.wellgoon.service;
 
+import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
 import com.wellgoon.bean.User;
 import junit.framework.TestCase;
 import org.springframework.context.ApplicationContext;
@@ -24,7 +25,7 @@ public class UserServiceTest extends TestCase {
     }
 
     public void testAdd() throws Exception {
-        User user = new User("testAddUser","ThisIsPassword");
+        User user = new User("yangjh","SDKFDKD4308SDKFJKD");
         userService.add(user);
     }
 
@@ -51,6 +52,7 @@ public class UserServiceTest extends TestCase {
         for (User u : ls){
             System.out.println(u.getUsername());
         }
+        System.out.println(ls.size());
     }
 
 }
