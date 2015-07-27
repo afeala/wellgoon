@@ -15,7 +15,7 @@
     <!-- 指定spring的配置文件，默认从web根目录寻找配置文件，也可以通过Spring提供的classpath:前缀指定从类路径下寻找 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring-config.xml</param-value>
+        <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
 
     <!-- 对Spring容器进行实例化 -->
