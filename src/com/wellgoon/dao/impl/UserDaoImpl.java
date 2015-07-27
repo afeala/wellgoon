@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * 项目名称：studyssh
  * 项目包名：com.wellgoon.dao.impl
@@ -23,6 +25,26 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void add(User user) {
         sessionFactory.getCurrentSession().save(user);
+    }
+
+    @Override
+    public void edit(User user) {
+        sessionFactory.getCurrentSession().update(user);
+    }
+
+    @Override
+    public void del(String id) {
+        sessionFactory.getCurrentSession().delete(sessionFactory.getCurrentSession().load(User.class,id));
+    }
+
+    @Override
+    public User get(String id) {
+        return (User)sessionFactory.getCurrentSession().get(User.class , id);
+    }
+
+    @Override
+    public List<User> getAll() {
+        return sessionFactory.getCurrentSession().createQuery("from User").list();
     }
 
     public SessionFactory getSessionFactory() {

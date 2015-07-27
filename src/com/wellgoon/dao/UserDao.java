@@ -2,6 +2,9 @@ package com.wellgoon.dao;
 
 import com.wellgoon.bean.User;
 
+import javax.jws.soap.SOAPBinding;
+import java.util.List;
+
 /**
  * 项目名称：studyssh
  * 项目包名：com.wellgoon.dao
@@ -11,4 +14,8 @@ import com.wellgoon.bean.User;
  */
 public interface UserDao {
     public void add(User user);
+    public void edit(User user);
+    public void del(String id);
+    public User get(String id);
+    public List<User> getAll();
 }

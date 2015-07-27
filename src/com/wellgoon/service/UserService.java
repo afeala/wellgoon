@@ -2,6 +2,8 @@ package com.wellgoon.service;
 
 import com.wellgoon.bean.User;
 
+import java.util.List;
+
 /**
  * 项目名称：studyssh
  * 项目包名：com.wellgoon.service
@@ -15,4 +17,8 @@ public interface UserService {
      * @param user
      */
     public void add(User user);
+    public void edit(User user);
+    public void del(String id);
+    public User get(String id);
+    public List<User> getAll();
 }

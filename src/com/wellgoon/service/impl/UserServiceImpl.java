@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 项目名称：studyssh
@@ -28,6 +29,26 @@ public class UserServiceImpl implements UserService {
     @Override
     public void add(User user) {
         userDao.add(user);
+    }
+
+    @Override
+    public void edit(User user) {
+        userDao.edit(user);
+    }
+
+    @Override
+    public void del(String id) {
+        userDao.del(id);
+    }
+
+    @Override
+    public User get(String id) {
+        return userDao.get(id);
+    }
+
+    @Override
+    public List<User> getAll() {
+        return userDao.getAll();
     }
 
     public UserDao getUserDao() {
