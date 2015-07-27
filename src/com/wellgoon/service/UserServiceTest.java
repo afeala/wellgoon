@@ -24,12 +24,12 @@ public class UserServiceTest extends TestCase {
     }
 
     public void testAdd() throws Exception {
-        User user = new User("test","adfdsfa1564sdfkdjfld");
+        User user = new User("testAddUser","ThisIsPassword");
         userService.add(user);
     }
 
     public void testGet() throws Exception{
-        String id = "402881b24ecd7372014ecd73737d0000";
+        String id = "402881b24ecd42e9014ecd42ea440000";
         User user = userService.get(id);
         System.out.println(user.getId());
         System.out.println(user.getUsername());
@@ -37,13 +37,13 @@ public class UserServiceTest extends TestCase {
     }
 
     public void testEdit() throws Exception{
-        User user = userService.get("402881b24ecd7372014ecd73737d0000");
+        User user = userService.get("402881b24ecd42e9014ecd42ea440000");
         user.setUsername("updateUsernameTest");
         userService.edit(user);
     }
 
     public void testDel() throws Exception{
-        userService.del("402881b24ecd7372014ecd73737d0000");
+        userService.del("402881b24ecd42e9014ecd42ea440000");
     }
 
     public void testGetAll() throws Exception{
