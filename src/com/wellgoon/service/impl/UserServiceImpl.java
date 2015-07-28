@@ -1,6 +1,6 @@
 package com.wellgoon.service.impl;
 
-import com.wellgoon.bean.User;
+import com.wellgoon.domain.User;
 import com.wellgoon.dao.UserDao;
 import com.wellgoon.service.UserService;
 import org.springframework.stereotype.Service;

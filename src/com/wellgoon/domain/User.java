@@ -1,8 +1,8 @@
-package com.wellgoon.bean;
+package com.wellgoon.domain;
 
 /**
  * 项目名称：studyssh
- * 项目包名：com.wellgoon.bean
+ * 项目包名：com.wellgoon.domain
  * 类    名：User
  * 创 建 人：Rocky
  * 创 建 于：2015/7/23

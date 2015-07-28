@@ -1,6 +1,6 @@
 package com.wellgoon.dao.impl;
 
-import com.wellgoon.bean.User;
+import com.wellgoon.domain.User;
 import com.wellgoon.dao.UserDao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

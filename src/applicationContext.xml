@@ -15,7 +15,7 @@
 
        <context:component-scan base-package="com.wellgoon"/>
        <bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-       <!--<bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">-->
+       <!--<domain id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">-->
               <property name="driverClass" value="com.mysql.jdbc.Driver"/>
               <!--<property name="jdbcUrl" value="jdbc:mysql://115.29.14.247:3306/zhbit?useUnicode=true&amp;characterEncoding=UTF-8"/>-->
               <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8"/>
@@ -41,7 +41,7 @@
               <property name="dataSource" ref="datasource"/>
               <property name="mappingResources">
                      <list>
-                            <value>com/wellgoon/bean/User.hbm.xml</value>
+                            <value>com/wellgoon/domain/User.hbm.xml</value>
                      </list>
               </property>
               <property name="hibernateProperties">

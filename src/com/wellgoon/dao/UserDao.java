@@ -1,8 +1,7 @@
 package com.wellgoon.dao;
 
-import com.wellgoon.bean.User;
+import com.wellgoon.domain.User;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 /**

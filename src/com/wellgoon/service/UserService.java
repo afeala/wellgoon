@@ -1,6 +1,6 @@
 package com.wellgoon.service;
 
-import com.wellgoon.bean.User;
+import com.wellgoon.domain.User;
 
 import java.util.List;
 

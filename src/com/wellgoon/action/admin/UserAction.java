@@ -1,14 +1,12 @@
 package com.wellgoon.action.admin;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.wellgoon.bean.User;
+import com.wellgoon.domain.User;
 import com.wellgoon.service.UserService;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
-import javax.swing.*;
-import java.awt.event.ActionEvent;
 import java.util.List;
 
 /**
