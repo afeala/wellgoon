@@ -4,6 +4,7 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
+<!--suppress ALL -->
 <struts>
         <!-- 设置编码格式 -->
         <constant name="struts.i18n.encoding" value="UTF-8" />
@@ -22,5 +23,6 @@
         <!-- 国际化资源文件名称 -->
         <constant name="struts.custom.i18n.resources" value="globalMessages"/>
 
-        <include file="struct_web.xml" />
+        <include file="struts_web.xml" />
+        <include file="struts_admin.xml" />
 </struts>

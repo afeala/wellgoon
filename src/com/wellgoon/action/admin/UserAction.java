@@ -18,7 +18,7 @@ import java.util.List;
  * 创 建 人：Rocky
  * 创 建 于：2015/7/23
  */
-@Controller("userActionAdmin")
+@Controller("userAdmin")
 @Scope("prototype")
 public class UserAction extends ActionSupport {
     User user;

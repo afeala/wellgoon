@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+        <package name="admin" extends="struts-default" namespace="/admin">
+
+                <!-- 首页单独配置 -->
+                <action name="index" class="indexAdmin" method="index">
+                        <result name="success">/WEB-INF/pages/admin/index.jsp</result>
+                </action>
+
+                <!-- 登录单独配置 -->
+                <action name="login" class="loginAdmin" method="login">
+                        <result name="success">/WEB-INF/pages/admin/login.jsp</result>
+                </action>
+
+                <!-- 通配符配置 -->
+                <action name="*_*" class="{1}Admin" method="{2}">
+                        <result name="success">/WEB-INF/pages/admin/{1}/{2}.jsp</result>
+                </action>
+        </package>
+</struts>
