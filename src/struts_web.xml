@@ -15,23 +15,6 @@
                         </interceptor-stack>
                 </interceptors>
 
-                <global-results>
-                        <result name="index" type="redirectAction" >
-                                <param name="namespace">/pages/web</param>
-                                <param name="actionName">index_index</param>
-                        </result>
-                        <result name="login" type="redirectAction">
-                                <param name="namespace">/pages/web</param>
-                                <param name="actionName">index</param>
-                        </result>
-                </global-results>
-
-                <action name="index" class="indexWeb" method="index">
-                        <result name="success">/WEB-INF/pages/web/index.jsp</result>
-                </action>
-                <action name="login" class="loginWeb" method="login">
-                        <result name="success">/WEB-INF/pages/web/login.jsp</result>
-                </action>
                 <action name="*_*" class="{1}Web" method="{2}">
                         <result name="success">/WEB-INF/pages/web/{1}/{2}.jsp</result>
                 </action>

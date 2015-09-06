@@ -8,13 +8,9 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <title>We'll Go On Manager</title>
+    <title>Web Manager</title>
 </head>
 <body>
-<s:iterator value="userList" id="item">
-    <s:property value="#item.id" /><br/>
-    <s:property value="#item.username" /><br/>
-    <s:property value="#item.password" /><br/>
-</s:iterator>
+    <p>Test jaksdjflkjsda;fja;lsdjkfljasdlkjfklasdjfkjasdkljkf</p>
 </body>
 </html>

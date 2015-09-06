@@ -5,16 +5,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="s" uri="/struts-tags" %>
+<!doctype html>
 <html>
   <head>
     <title>Wellcome We'll go on</title>
+    <script>
+      location.href("/pages/admin/index_index.html");
+    </script>
   </head>
   <body>
-    <s:iterator value="userList" id="item">
-      <s:property value="#item.id" />
-      <s:property value="#item.username" />
-      <s:property value="#item.password" />
-    </s:iterator>
+    <p>
+      index asdfasdfasdf<br />
+      asdfasdffdaf<br />
+      asdfqwerqewg<br />
+      cvcfghfdsvsfdgqaedfa<br />
+    </p>
   </body>
 </html>

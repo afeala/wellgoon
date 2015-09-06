@@ -23,12 +23,6 @@
         <!-- 国际化资源文件名称 -->
         <constant name="struts.custom.i18n.resources" value="globalMessages"/>
 
-        <include file="struts_web.xml" />
         <include file="struts_admin.xml" />
-        <package name="index" namespace="/*">
-                <default-action-ref name="index"></default-action-ref>
-                <action name="index">
-                        <result type="dispatcher">index.jsp</result>
-                </action>
-        </package>
+        <include file="struts_web.xml" />
 </struts>
