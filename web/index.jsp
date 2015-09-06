@@ -10,15 +10,11 @@
   <head>
     <title>Wellcome We'll go on</title>
     <script>
-      location.href("/pages/admin/index_index.html");
+      location.href("/pages/web/index_index.html");
     </script>
   </head>
   <body>
     <p>
-      index asdfasdfasdf<br />
-      asdfasdffdaf<br />
-      asdfqwerqewg<br />
-      cvcfghfdsvsfdgqaedfa<br />
     </p>
   </body>
 </html>

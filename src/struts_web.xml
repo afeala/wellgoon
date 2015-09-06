@@ -15,7 +15,7 @@
                         </interceptor-stack>
                 </interceptors>
 
-                <action name="*_*" class="{1}Web" method="{2}">
+                <action name="*_*" class="{1}ActionWeb" method="{2}">
                         <result name="success">/WEB-INF/pages/web/{1}/{2}.jsp</result>
                 </action>
         </package>
